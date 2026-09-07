@@ -1,0 +1,13 @@
+// Noxide is a small D command-line diagnostic built with Nox.
+project "noxide" {
+    version = file("./VERSION")
+    description = "A D command-line tool that reports its runtime environment."
+    license = "Unlicense"
+    edition = "1"
+
+    executable "noxide" {
+        sources = ["src/main.d"]
+        flags = []
+        install = true
+    }
+}
