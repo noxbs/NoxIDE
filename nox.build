@@ -1,12 +1,12 @@
-// Noxide is a small D command-line diagnostic built with Nox.
 project "noxide" {
     version = file("./VERSION")
-    description = "A D command-line tool that reports its runtime environment."
+    description = "A focused Rust code editor with native Nox project integration."
     license = "Unlicense"
     edition = "1"
+    version_files = ["VERSION", "Cargo.toml"]
 
-    executable "noxide" {
-        sources = ["src/main.d"]
+    rust_executable "noxide" {
+        sources = ["src/main.rs"]
         flags = []
         install = true
     }

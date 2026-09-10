@@ -1,0 +1,6 @@
+tasks:
+    check:
+        run: nox validate
+    build:
+        @nox setup
+        @nox build
